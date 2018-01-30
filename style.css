@@ -65,7 +65,7 @@ br{
 /*==============banner part=============*/
 .banner_part{
 	background:url('img/banner.jpg');
-	padding:20px;
+	padding:15px;
 }
 .come_head{
 	margin:60px 0 0 0;
@@ -143,7 +143,7 @@ br{
 	background:none;
 	border:2px solid #fff;
 	border-radius:0;
-	height:45px;
+	height:43px;
 	margin:10px 0 0 0;
 }
 .input_box{
@@ -165,6 +165,7 @@ option:not(:first-of-type) {
 	border-radius:0;
 	font-size:20px;
 	margin:0 0 18px 0;
+	
 	
 }
 .right_icon{
@@ -246,7 +247,18 @@ option:not(:first-of-type) {
 	br{
 	
 }
-
+.logo_style{
+	width:220px;
+	margin:0 auto;
+	padding:0 0 10px 20px;
+}
+.divPosition {display:flex;flex-flow:column;}
+	.one{order :2;}
+	.two{order :1;}
+	
+	
+	
+	
 	 body {
        overflow-x: hidden !important;
     }
@@ -260,15 +272,15 @@ option:not(:first-of-type) {
 	/*===============dear head===============*/
 	
 .dear_head{
-	font-size:35px;
+	font-size:20px;
 	color:#fff;
 	font-family:'logo_font1';
 }
 .dear_para{
-	font-size:16px;
+	font-size:14px;
 	color:#fff;
 
-	font-family:'logo_font1';
+	font-family:'arial';
 }
 /*==============banner part=============*/
 .banner_part{
@@ -276,20 +288,20 @@ option:not(:first-of-type) {
 	
 }
 .come_head{
-	font-size:25px;
-	margin:0;
+	font-size:23px;
+	margin:0 0 0 0;
 	color:#fff;
 	font-family:'logo_font1';
 }
 .come_para{
-	font-size:22px;
+	font-size:20px;
 	color:#fff;
 	font-family:'logo_font1';
-	margin:5px 0 30px 0;
+	margin:5px 0 10px 0;
 }
 .circle_border{
 	
-	margin:10px auto;
+	margin:0 auto;
 	width:85px;
 	height:85px;
 	border-radius:50%;
@@ -297,7 +309,7 @@ option:not(:first-of-type) {
 
 }
 .join_para{
-	font-size:16px;
+	font-size:14px;
 	color:#fff;
 	margin:5px 0 20px 0;
 }
@@ -307,42 +319,44 @@ option:not(:first-of-type) {
 }
 /*================aboyt part================*/
 .about_head{
-	font-size:55px;
+	font-size:25px;
 	color:#076280;
-	margin:0 0 10px 0;
+	padding:20px 0 0 0;
+	margin:0 0 5px 0;
 	font-family:'logo_font1';
 }
 .about_para{
-	font-size:16px;
+	font-size:14px;
 	color:#1d1d1d;
 	margin:5px 0 0 0;
 	font-family:'lato_font';
 }
 .about_part{
-	padding:0 10px 0 10px;
+	padding:0 10px 10px 10px;
 }
 .about_background_2{
 	
 }
+
 /*=================form part============*/
 .orange_box{
 	background:#f28301;
 	width:100%;
-	height:60px;
+	height:40px;
 }
 .black_background{
 	background:#141414;
 }
 .form_head{
-	font-size:36px;
+	font-size:26px;
 	color:#fff;
 	font-family:'latobold_font';
 }
 .my_form{
 	background:none;
-	border:2px solid #fff;
+	border:1px solid #fff;
 	border-radius:0;
-	height:45px;
+	height:40px;
 	margin:10px 0 0 0;
 }
 .input_box{
@@ -358,45 +372,45 @@ option:not(:first-of-type) {
 }
 .join_btn{
 	width:70%;
-	height:50px;
+	height:40px;
 	background:#168cb3;
 	border:0;
 	border-radius:0;
-	font-size:20px;
+	font-size:18px;
 	margin:0 0 18px 0;
 	
 }
 .right_icon{
 	float:left;
-	font-size:35px;
-	padding:0 0 0 0;
+	font-size:25px;
+	padding:0 10px 0 0!important;
 	color:#168cb3;
 }
 .bullet_para{
 	color:#1d1d1d;
-	font-size:19px;
-	padding:0 0 0 0;
+	font-size:16px;
+	padding:0 0 0 10px;
 }
 .bullet_part{
 	padding:10px 0 0 0;
 	background:#e5e4e4;
 }
-.toluna_group_text{
+.toluna_group_text a{
 	font-size:16px;
 	color:#0a99c8;
-	padding:5px 0 5px 0;
+	padding:5px 0 20px 0;
 	font-family:'lato_font';	
 }
 /*=================about happidoc================*/
 .happidoc_head{
-	font-size:35px;
+	font-size:25px;
 	color:#076280;
 	margin:20px 0 10px 0;
 	font-family:'logo_font1';
 }
 .happidoc_para{
 	color:#1d1d1d;
-	font-size:19px;
+	font-size:14px;
 	padding:0 0 20px 0;
 }
 .join_btn_1{
@@ -412,6 +426,22 @@ option:not(:first-of-type) {
 	background:#e5e4e4;
 	height:0;
 }
+.footer_part{
+	background:#1c1c1c;
+	height:100px;
+	width:100%;
+}
+.footer_para{
+	color:#fff;
+	font-size:14px;
+	padding:20px 0 0 0;
+}
+.footer_icon{
+	float:left;
+	margin:10px 5px 20px 0;
+	width:25px;
+}
+
 
 
 }
