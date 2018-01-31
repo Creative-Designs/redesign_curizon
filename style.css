@@ -524,7 +524,7 @@ option:not(:first-of-type) {
 .about_head{
 	font-size:55px;
 	color:#076280;
-	margin:50px 0 10px 0;
+	margin:10px 0 10px 0;
 	font-family:'logo_font1';
 }
 .about_para{
@@ -546,13 +546,14 @@ option:not(:first-of-type) {
 .orange_box{
 	background:#f28301;
 	width:100%;
-	height:60px;
+	height:40px;
 }
 .black_background{
 	background:#141414;
+
 }
 .form_head{
-	font-size:36px;
+	font-size:28px;
 	color:#fff;
 	font-family:'latobold_font';
 }
@@ -560,7 +561,7 @@ option:not(:first-of-type) {
 	background:none;
 	border:2px solid #fff;
 	border-radius:0;
-	height:43px;
+	height:37px;
 	margin:10px 0 0 0;
 }
 .input_box{
@@ -598,7 +599,7 @@ option:not(:first-of-type) {
 	padding:0 0 20px 0;
 }
 .bullet_part{
-	padding:110px 0 0 0;
+	padding:85px 0 0 0;
 	background:#e5e4e4;
 }
 /*=================about happidoc================*/
