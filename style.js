@@ -38,7 +38,8 @@ $(".more_woman").click(function(){
 	$(".panel_part").show();
 	$(".more_woman").hide();
 	$(".bullet_part").hide();
-	 $(".about_background_2").show();
+	 $(".about_background_2").hide();
+	 $(".first_form").hide();
 });
 
 
