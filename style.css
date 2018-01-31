@@ -65,7 +65,7 @@ br{
 /*==============banner part=============*/
 .banner_part{
 	background:url('img/banner.jpg');
-	padding:15px;
+	padding:12px;
 }
 .come_head{
 	margin:60px 0 0 0;
@@ -89,7 +89,7 @@ br{
 
 }
 .join_para{
-	font-size:16px;
+	font-size:18px;
 	color:#fff;
 	margin:5px 0 50px 0;
 }
@@ -102,7 +102,7 @@ br{
 }
 .about_background_2{
 	background:#e5e4e4;
-	height:210px;
+	height:200px;
 }
 .about_head{
 	font-size:55px;
@@ -441,20 +441,389 @@ option:not(:first-of-type) {
 	margin:10px 5px 20px 0;
 	width:25px;
 }
-
-
-
-}
+	}
 /*================media query 640px =====================*/
 @media screen and (min-width:481px) and (max-width:767px){
+
+
+
+
 
 
 }
 /*============================== media query ipad====================*/
 @media screen and (min-width:768px) and (max-width:992px){
+	br{
+	display:block;
+}
 
+.logo_style{
+	width:300px;
+	margin:0 auto;
+	padding:0 0 20px 0;
+}
+.dark_grey{
+	background:#141414;
+	
+}
+/*===============dear head===============*/
+.dear_head{
+	font-size:40px;
+	color:#fff;
+	font-family:'logo_font1';
+}
+.dear_para{
+	font-size:20px;
+	color:#fff;
+
+	font-family:'logo_font1';
+}
+/*==============banner part=============*/
+.banner_part{
+	background:url('img/banner.jpg');
+	padding:12px;
+}
+.come_head{
+	margin:20px 0 0 0;
+	font-size:35px;
+	color:#fff;
+	font-family:'logo_font1';
+}
+.come_para{
+	font-size:28px;
+	color:#fff;
+	font-family:'logo_font1';
+	margin:5px 0 50px 0;
+}
+.circle_border{
+	
+	margin:10px auto;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	border:3px solid #fff;
+
+}
+.join_para{
+	font-size:18px;
+	color:#fff;
+	margin:5px 0 50px 0;
+}
+.join_icon{
+	margin:20px auto;
+}
+/*================aboyt part================*/
+.about_background{
+	background:#e5e4e4;
+}
+.about_background_2{
+	background:#e5e4e4;
+	height:200px;
+}
+.about_head{
+	font-size:55px;
+	color:#076280;
+	margin:50px 0 10px 0;
+	font-family:'logo_font1';
+}
+.about_para{
+	font-size:17px;
+	color:#1d1d1d;
+	margin:5px 0 20px 0;
+	font-family:'lato_font';
+}
+.about_part{
+	padding:0 70px 0 70px;
+}
+.toluna_group_text{
+	font-size:16px;
+	color:#0a99c8;
+	margin:5px 0 20px 0;
+	font-family:'lato_font';
+}
+/*=================form part============*/
+.orange_box{
+	background:#f28301;
+	width:100%;
+	height:60px;
+}
+.black_background{
+	background:#141414;
+}
+.form_head{
+	font-size:36px;
+	color:#fff;
+	font-family:'latobold_font';
+}
+.my_form{
+	background:none;
+	border:2px solid #fff;
+	border-radius:0;
+	height:43px;
+	margin:10px 0 0 0;
+}
+.input_box{
+	width:100%;
+
+	display:inline !important;
+	
+}
+select {
+    color: #c4c4c4!important;
+}
+option:not(:first-of-type) {
+    color: black!important;
+}
+.join_btn{
+	width:90%!important;
+	height:50px;
+	background:#168cb3;
+	border:0;
+	border-radius:0;
+	font-size:20px;
+	margin:0 0 16px 0;
+	
+	
+}
+.right_icon{
+	float:left;
+	font-size:35px;
+	padding:0 20px 20px 0;
+	color:#168cb3;
+}
+.bullet_para{
+	color:#1d1d1d;
+	font-size:19px;
+	padding:0 0 20px 0;
+}
+.bullet_part{
+	padding:110px 0 0 0;
+	background:#e5e4e4;
+}
+/*=================about happidoc================*/
+.happidoc_head{
+	font-size:55px;
+	color:#076280;
+	margin:50px 0 10px 0;
+	font-family:'logo_font1';
+}
+.happidoc_para{
+	color:#1d1d1d;
+	font-size:19px;
+	padding:0 0 20px 0;
+}
+.footer_part{
+	background:#1c1c1c;
+	height:50px;
+	width:100%;
+}
+.footer_para{
+	color:#fff;
+	font-size:14px;
+	padding:20px 0 0 0;
+}
+.footer_icon{
+	float:left;
+	margin:10px 5px 0 0;
+	width:25px;
+}
+
+.join_btn_1{
+	width:100%;
+	height:65px;
+	background:#168cb3;
+	border:0;
+	border-radius:0;
+	font-size:20px;
+	margin:0 0 28px 0;
+}
 
 }
 /*==================media query ipad pro=============*/
 @media screen and (min-width:993px) and (max-width:1200px){
+		br{
+	display:block;
+}
+
+.logo_style{
+	width:300px;
+	margin:0 auto;
+	padding:0 0 20px 0;
+}
+.dark_grey{
+	background:#141414;
+	
+}
+/*===============dear head===============*/
+.dear_head{
+	font-size:40px;
+	color:#fff;
+	font-family:'logo_font1';
+}
+.dear_para{
+	font-size:20px;
+	color:#fff;
+
+	font-family:'logo_font1';
+}
+/*==============banner part=============*/
+.banner_part{
+	background:url('img/banner.jpg');
+	padding:12px 12px 70px 12px;
+}
+.come_head{
+	margin:20px 0 0 0;
+	font-size:35px;
+	color:#fff;
+	font-family:'logo_font1';
+}
+.come_para{
+	font-size:28px;
+	color:#fff;
+	font-family:'logo_font1';
+	margin:5px 0 50px 0;
+}
+.circle_border{
+	
+	margin:10px auto;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	border:3px solid #fff;
+
+}
+.join_para{
+	font-size:18px;
+	color:#fff;
+	margin:5px 0 50px 0;
+}
+.join_icon{
+	margin:20px auto;
+}
+/*================aboyt part================*/
+.about_background{
+	background:#e5e4e4;
+}
+.about_background_2{
+	background:#e5e4e4;
+	height:200px;
+}
+.about_head{
+	font-size:55px;
+	color:#076280;
+	margin:50px 0 10px 0;
+	font-family:'logo_font1';
+}
+.about_para{
+	font-size:20px;
+	color:#1d1d1d;
+	margin:5px 0 20px 0;
+	font-family:'lato_font';
+}
+.about_part{
+	padding:0 70px 0 70px;
+}
+.toluna_group_text{
+	font-size:16px;
+	color:#0a99c8;
+	margin:5px 0 20px 0;
+	font-family:'lato_font';
+}
+/*=================form part============*/
+.orange_box{
+	background:#f28301;
+	width:100%;
+	height:60px;
+}
+.black_background{
+	background:#141414;
+}
+.form_head{
+	font-size:36px;
+	color:#fff;
+	font-family:'latobold_font';
+}
+.my_form{
+	background:none;
+	border:2px solid #fff;
+	border-radius:0;
+	height:43px;
+	margin:10px 0 0 0;
+}
+.input_box{
+	width:100%;
+
+	display:inline !important;
+	
+}
+select {
+    color: #c4c4c4!important;
+}
+option:not(:first-of-type) {
+    color: black!important;
+}
+.join_btn{
+	width:90%!important;
+	height:50px;
+	background:#168cb3;
+	border:0;
+	border-radius:0;
+	font-size:20px;
+	margin:0 0 16px 0;
+	
+	
+}
+.right_icon{
+	float:left;
+	font-size:35px;
+	padding:0 20px 20px 0;
+	color:#168cb3;
+}
+.bullet_para{
+	color:#1d1d1d;
+	font-size:19px;
+	padding:0 0 20px 0;
+}
+.bullet_part{
+	padding:110px 0 0 0;
+	background:#e5e4e4;
+}
+/*=================about happidoc================*/
+.happidoc_head{
+	font-size:55px;
+	color:#076280;
+	margin:50px 0 10px 0;
+	font-family:'logo_font1';
+}
+.happidoc_para{
+	color:#1d1d1d;
+	font-size:19px;
+	padding:0 0 20px 0;
+}
+.footer_part{
+	background:#1c1c1c;
+	height:50px;
+	width:100%;
+}
+.footer_para{
+	color:#fff;
+	font-size:14px;
+	padding:20px 0 0 0;
+}
+.footer_icon{
+	float:left;
+	margin:10px 5px 0 0;
+	width:25px;
+}
+
+.join_btn_1{
+	width:100%;
+	height:65px;
+	background:#168cb3;
+	border:0;
+	border-radius:0;
+	font-size:20px;
+	margin:0 0 26px 0;
+}
+
 }
