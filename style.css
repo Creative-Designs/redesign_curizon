@@ -187,8 +187,8 @@ option:not(:first-of-type) {
 }
 .bullet_para{
 	color:#1d1d1d;
-	font-size:19px;
-	padding:0 0 19px 0;
+	font-size:17px;
+	padding:0 30px 19px 0;
 }
 .bullet_part{
 	padding:110px 0 0 0;
@@ -399,7 +399,7 @@ option:not(:first-of-type) {
 }
 .bullet_para{
 	color:#1d1d1d;
-	font-size:16px;
+	font-size:13px;
 	padding:0 0 0 10px;
 }
 .bullet_part{
