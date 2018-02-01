@@ -40,6 +40,16 @@
 br{
 	display:none;
 }
+input{
+	color:#fff!important;
+}
+.container-fluid {
+overflow-x: hidden !important;
+padding-right: 0!important;
+padding-left:0!important;
+margin-right: auto !important;
+margin-left: auto !important;
+}
 
 .logo_style{
 	width:300px;
@@ -182,7 +192,7 @@ option:not(:first-of-type) {
 }
 .bullet_part{
 	padding:110px 0 0 0;
-	background:#e5e4e4;
+	background:#fff;
 }
 /*=================about happidoc================*/
 .happidoc_head{
@@ -394,7 +404,7 @@ option:not(:first-of-type) {
 }
 .bullet_part{
 	padding:10px 0 0 0;
-	background:#e5e4e4;
+	background:#fff;
 }
 .toluna_group_text a{
 	font-size:16px;
@@ -600,7 +610,7 @@ option:not(:first-of-type) {
 }
 .bullet_part{
 	padding:85px 0 0 0;
-	background:#e5e4e4;
+	background:#fff;
 }
 /*=================about happidoc================*/
 .happidoc_head{
@@ -788,7 +798,7 @@ option:not(:first-of-type) {
 }
 .bullet_part{
 	padding:110px 0 0 0;
-	background:#e5e4e4;
+	background:#fff;
 }
 /*=================about happidoc================*/
 .happidoc_head{
