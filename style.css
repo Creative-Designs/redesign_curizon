@@ -371,7 +371,7 @@ option:not(:first-of-type) {
 	margin:10px 0 0 0;
 }
 .input_box{
-	width:145px;
+	width:160px;
 	display:inline !important;
 	
 }
