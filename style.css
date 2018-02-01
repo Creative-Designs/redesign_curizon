@@ -72,7 +72,7 @@ input::placeholder{
 	border:none;
 }
 .yes_box_1:hover{
-	background:#787878;
+	background:#1F5990;
 }
 .yes_box{
 	width:92px;
@@ -84,7 +84,7 @@ input::placeholder{
 	border:none;
 }
 .yes_box:hover{
-	background:#787878;
+	background:#1F5990;
 }
 .no_box{
 	background:#787878;
@@ -95,7 +95,7 @@ input::placeholder{
 	border:none;
 }
 .no_box:hover{
-	background:#787878;
+	background:#3A76AF;
 }
 .month_box{
 	width:92px;
@@ -107,7 +107,7 @@ input::placeholder{
 	border:none;
 }
 .month_box:hover{
-	background:#787878;
+	background:#3A76AF;
 }
 .date_box{
 	background:#787878;
@@ -118,7 +118,7 @@ input::placeholder{
 	border:none;
 }
 .date_box:hover{
-	background:#787878;
+	background:#3A76AF;
 }
 
 .logo_style{
