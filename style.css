@@ -45,8 +45,8 @@ input{
 }
 .container-fluid {
 overflow-x: hidden !important;
-padding-right: 0!important;
-padding-left:0!important;
+padding-right: 5px!important;
+padding-left:5px!important;
 margin-right: auto !important;
 margin-left: auto !important;
 }
