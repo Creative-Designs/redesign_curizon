@@ -188,6 +188,7 @@ option:not(:first-of-type) {
 .bullet_para{
 	color:#1d1d1d;
 	font-size:17px;
+	font-weight:bold;
 	padding:0 30px 19px 0;
 }
 .bullet_part{
@@ -399,8 +400,9 @@ option:not(:first-of-type) {
 }
 .bullet_para{
 	color:#1d1d1d;
-	font-size:13px;
+	font-size:15px;
 	padding:0 0 0 10px;
+	font-weight:bold;
 }
 .bullet_part{
 	padding:10px 0 0 0;
@@ -607,6 +609,7 @@ option:not(:first-of-type) {
 	color:#1d1d1d;
 	font-size:19px;
 	padding:0 0 20px 0;
+	font-weight:bold;
 }
 .bullet_part{
 	padding:85px 0 0 0;
@@ -795,6 +798,7 @@ option:not(:first-of-type) {
 	color:#1d1d1d;
 	font-size:19px;
 	padding:0 0 20px 0;
+	font-weight:bold;
 }
 .bullet_part{
 	padding:110px 0 0 0;
