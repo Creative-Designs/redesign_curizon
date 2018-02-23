@@ -31,17 +31,29 @@ $(".submit-btn").click(function(){
   });
   
  $(".panel_part").hide();
-  $(".less_part").hide();
-  $(".about_background_2").hide();
+  $(".continue_part").hide();
+ $(".dentist_part").hide();
+ 
+ 
 $(".more_woman").click(function(){
-	$(".less_part").show();
+	$(".continue_part").show();
 	$(".panel_part").show();
 	$(".more_woman").hide();
-	
-	 $(".about_background_2").hide();
+	$(".dentist_part").hide();
 	 $(".first_form").hide();
 });
 
+$(".continue_part").click(function(){
+	$(".dentist_part").show();
+	$(".panel_part").hide();
+	
+});//hide shoe end
+
+$("#occupationSelect").change(function(){
+	$("#occupationHide").hide();
+	
+	$("#")+.this().val().show()
+});
 
 
 
