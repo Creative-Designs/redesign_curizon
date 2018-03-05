@@ -176,7 +176,7 @@ input::placeholder{
 .join_icon{
 	margin:20px auto;
 }
-/*================aboyt part================*/
+/*================about part================*/
 .about_background{
 	background:#e5e4e4;
 }
@@ -326,6 +326,33 @@ option:not(:first-of-type) {
 }
 .date_box_md:hover{
 	background:#3A76AF;
+}
+.month_box_hyg{
+	width:92px;
+	background:#787878;
+	border:none;
+	height:39px;
+	margin:0 10px 0 0;
+	border:none;
+	
+}
+.date_box_hyg{
+	background:#787878;
+	width:60px;
+	height:39px;
+	margin:0 10px 0 0;
+	border:none;
+
+}
+
+
+.dentist, .diet, .emergency, .healthcare, .hospital, .managed, .md, .nursing, .optometry, .pharmacy, .physian{
+	display: none;
+}
+
+
+.hygiene_exam{
+	display: none;
 }
 
 

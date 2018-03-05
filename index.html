@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script language="JavaScript" type="text/javascript" src="style.js"></script>
+	<script type="text/javascript" src="style.js"></script>
 	</head>
 	
 
@@ -232,18 +232,19 @@
 			<option value="dentist"  class="occupationHide">Dentist</option>
 			<option value="diet" class="occupationHide">Diet/ Health / Nutrition</option>
 			<option value="emergency" class="occupationHide">Emergency Medical service</option>
-			<option value="emergency" class="occupationHide">Hospitals/Medical Office Staff</option>
-			<option value="emergency" class="occupationHide">Managed Care</option>
-			<option value="emergency" class="occupationHide">MD or DO</option>
-			<option value="emergency" class="occupationHide">Nursing</option>
-			<option value="emergency" class="occupationHide">Optometry(Not MD)</option>
-			<option value="emergency" class="occupationHide">Pharmacy</option>
-			<option value="emergency" class="occupationHide">Physician Assistant</option>
-			<option value="emergency" class="occupationHide">Podiatry</option>
-			<option value="emergency" class="occupationHide">Psychology(Not MD)</option>
-			<option value="emergency" class="occupationHide">Therapist</option>
-			<option value="emergency" class="occupationHide">Veterinary Medicine</option>
-			<option value="emergency" class="occupationHide">Other</option>
+			<option value="healthcare" class="occupationHide">Healthcare IT</option>
+			<option value="hospital" class="occupationHide">Hospitals/Medical Office Staff</option>
+			<option value="managed" class="occupationHide">Managed Care</option>
+			<option value="md" class="occupationHide">MD or DO</option>
+			<option value="nursing" class="occupationHide">Nursing</option>
+			<option value="optometry" class="occupationHide">Optometry(Not MD)</option>
+			<option value="pharmacy" class="occupationHide">Pharmacy</option>
+			<option value="physian" class="occupationHide">Physician Assistant</option>
+			<option value="podiatry" class="occupationHide">Podiatry</option>
+			<option value="psychology" class="occupationHide">Psychology(Not MD)</option>
+			<option value="therapist" class="occupationHide">Therapist</option>
+			<option value="Medicine" class="occupationHide">Veterinary Medicine</option>
+			<option value="other" class="occupationHide">Other</option>
 		</select>
 </div>
 
@@ -251,16 +252,20 @@
 </div><!--panel part end-->
 <!--show part end-->
 
+<!-- hygiene examination section-->
+
+<!-- hygiene examination section End-->
+
 	<!--div dentist_part show additional-->
-<div class="dentist_part">     
+<div class="dentist subDiv">     
 	<div class="form-group">
 		<p style="color:#fff;">Which of the following best categorizes your current position in the Dental field?</p>
-		<select class="form-control my_form">
+		<select id="dentalFieldCategory" class="form-control my_form">
 			<option value="">Select</option>
 			<option value="">Licensed Dentist</option>
 			<option value="">certified Dental Assistant</option>
 			<option value="">Dental Assistant Student</option>
-			<option value="">Licensed Dental Hygienist</option>
+			<option value="hygienist">Licensed Dental Hygienist</option>
 			<option value="">Dental Hygiene Student</option>
 			<option value="">Dental Lab Technician</option>
 			<option value="">Office Manager</option>
@@ -270,11 +275,11 @@
 		</select>
 	</div>
 	
-	<div class="form-group">
-		<p style="color:#fff;">Which of the following best categorizes your current position in the Dental field?</p>
+	<div class="form-group" id="dentalFieldFulltime">	
+		<p style="color:#fff;">What is your professional status?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value="">Full time</option>
+			<option value="fulltime_val">Full time</option>
 			<option value="">Part Time</option>
 			<option value="">Retired</option>
 			<option value="">Unemployed</option>
@@ -283,8 +288,93 @@
 		</select>
 	</div>
 	
+<div class="hygiene_exam"style="float:left;">
+		<div class="form-group">
+			<p style="color:#fff;">National Board Dental Hygiene Examination</p>
+			<input class="btn btn-info month_box_hyg"  placeholder="Month"type="text"/>
+			<input class="btn btn-info date_box_hyg"  placeholder="Date"type="text"/>
+			<input class="btn btn-info month_box_hyg"  placeholder="Year"type="text"/>
+		</div>
+		
+		<div class="form-group" style="float:left;">
+			<p style="color:#fff;">Regional or state clinical board examination</p>
+			<input class="btn btn-info month_box_hyg"  placeholder="Month"type="text"/>
+			<input class="btn btn-info date_box_hyg" placeholder="Date"type="text"/>
+			<input class="btn btn-info month_box_hyg" placeholder="Year"type="text"/>
+		</div>
+</div>
+	
+	<div class="fullTime ">
+		<div class="form-group " >	
+		<p style="color:#fff;float:left;">Please identify your areas of concentration. (select as many as apply)</p>
+		<select class="form-control my_form">
+			<option value="">Cosmetic Dentistry</option>
+			<option value="">Dental Public Health</option>
+			<option value="">Endodontics</option>
+			<option value="">General Dentistry</option>
+			<option value="">Gerodontics</option>
+			<option value="">Oral and Maxilloafacial Pain</option>
+			<option value="">Oral and Maxilloafacial Pathology</option>
+			<option value="">Oral and Maxilloafacial Radiology</option>
+			<option value="">Oral and Maxilloafacial Surgery</option>
+			<option value="">Oral Implantology</option>
+			<option value="">Specialty Licensure date - Orthodontics and Dentofacial Orthopedics</option>
+			<option value="">Pediatric Dentistry</option>
+			<option value="">Periodontics</option>
+			<option value="">Prosthodontics</option>
+			<option value="">Temporomandibular Joint Disorder</option>
+			
+		</select>
+		</div>
+		
+				
+	<div class="form-group">	
+		<p style="color:#fff;float:left;">What best describes the type of Primary Practice that you work within?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">Solo</option>
+			<option value="">Group</option>
+			<option value="">Partnership</option>
+			<option value="">Associateship</option>
+			<option value="">Faculty</option>
+			<option value="">Federal Dental Service</option>
+			<option value="">Not Applicable t this time</option>
+			
+		</select>
+	</div>
+		
+	<div class="form-group">	
+		<p style="color:#fff;float:left;">What is the name of your primary practice?</p>
+		<input type="text" class="form-control my_form " placeholder="" >
+	</div>
+	
+	<div class="form-group">	
+		<p style="color:#fff;float:left;">What role do you play in the purchasing of Dental Supplies?</p>
+			<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">I make the final decision</option>
+			<option value="">I make the final decision in consultation with others</option>
+			<option value="">I provide recommendations only</option>
+			<option value="">I play no role</option>
+			</select>
+	</div>
+	<div class="form-group">	
+		<p style="color:#fff;float:left;">Which of the following activities are you involved in? (check all that apply)</p>
+			<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">biling</option>
+			<option value="">Educated</option>
+			<option value="">I provide recommendations only</option>
+			<option value="">I play no role</option>
+			</select>
+	</div>
+	
+	
+	</div><!--full time end-->
+	
+	<!--sub div end-->
 	<div class="form-group">
-		<p style="color:#fff;">What type of patients do you see in your practice?</p>
+		<p style="color:#fff;float:left;">What type of patients do you see in your practice?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
 			<option value="">Adult only</option>
@@ -306,14 +396,19 @@
 		</select>
 	</div>
 	
-<div class="text-center">
-	<a href="#" ><button class="btn btn-info join_btn Submit_part">Submit </button></a>
-</div>	
+	<div class="text-center">
+		<a href="#" ><button class="btn btn-info join_btn Submit_part">Submit </button></a>
+	</div>	
 </div>
 
 <!--diet part-->
-<div class="diet_part">     
+<div class="diet subDiv">   
 	<div class="form-group">
+	<p style="color:#fff;">What is the name of your primary practice?</p>
+	<input type="text" class="form-control my_form " placeholder="" >
+	</div>
+  
+	<div class="form-group" id="otherDiet">
 		<p style="color:#fff;">Which of the following best describes your profession?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
@@ -321,9 +416,16 @@
 			<option value="">Dietician</option>
 			<option value="">Nutritionist</option>
 			<option value="">Personal Trainer</option>
-			<option value="">Other</option>
+			<option value="Nutrition_val">Other</option>
 		</select>
 	</div>
+	<!--SUB DIV-->
+	<div class="form-group dietSub">
+	<p style="color:#fff;">Please specify the other segment of Diet/Health/ Nutrition that you specialize in.</p>
+	<input type="text" class="form-control my_form " placeholder="" >
+	</div>
+
+	<!--SUB DIV-->
 	
 	<div class="form-group">
 		<p style="color:#fff;">What best describes your practice setting?</p>
@@ -374,7 +476,7 @@
 		</select>
 	</div>
 	
-		<div class="form-group">
+	<div class="form-group">
 		<p style="color:#fff;">How would you classify the type of practice that you are involved with? (select all that apply)</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
@@ -392,9 +494,15 @@
 	<a href="#" ><button class="btn btn-info join_btn Submit_part">Submit </button></a>
 </div>	
 	</div>
-	<!--medical services-->
+	
 	<!--diet part-->
-<div class="medical">     
+<div class="emergency subDiv">   
+	<div class="form-group">
+		<p style="color:#fff;">What is the name of your primary practice?
+</p>
+		<input type="text" placeholder="" class="form-control my_form">
+	</div>
+  
 	<div class="form-group">
 		<p style="color:#fff;">Please identify your occupation title.</p>
 		<select class="form-control my_form">
@@ -477,7 +585,7 @@
 	</div>
 	<!--end-->
 	<!--HEALTHCARE-->
-	<div class="Healthcare">     
+<div class="healthcare subDiv">     
 	<div class="form-group">
 		<p style="color:#fff;">What is your current title?</p>
 		<input type="text" class="form-control my_form " >
@@ -551,14 +659,14 @@
 </div>	
 	</div>
 
-<!--heathcare end-->
+
 <!--hospital-->
-<div class="hospital">     
-	<div class="form-group">
+<div class="hospital subDiv">     
+	<div class="form-group" id="hospital_administator">
 		<p style="color:#fff;">Which best describes your occupation title?</p>
 			<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value="">Hospital Administrator</option>
+			<option value="hospitalSub">Hospital Administrator</option>
 			<option value="">Human Resources</option>
 			<option value="">Legal Liasion</option>
 			<option value="">Office  Administrator</option>
@@ -567,6 +675,22 @@
 			<option value="">Staffing Manager</option>
 		</select>
 	</div>
+	
+	<div class="form-group hospiSub">
+		<p style="color:#fff;">What is the patient capacity of the hospital at which you have primary privileges?</p>
+			<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value="">r</option>
+		</select>
+	</div>
+	
+	
 	
 	<div class="form-group">
 		<p style="color:#fff;">What best describes your practice setting?</p>
@@ -636,27 +760,27 @@
 </div>	
 	</div>
 
-<!--hospital end-->
 <!--managed-->
 
-<div class="managed">     
-	<div class="form-group">
+<div class="managed subDiv">     
+	<div class="form-group" id="administator_sub">
 		<p style="color:#fff;">Which of the following best categorizes your current position in the Managed Care industry?</p>
 			<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value=""> Administrator</option>
+			<option value="administratorSub"> Administrator</option>
 			<option value="">Assistant/Associate Medical Director</option>
 			<option value="">Assistant / Associate Pharmacy Director</option>
 			<option value="">Executive</option>
 			<option value="">Formulary Manager</option>
 			<option value="">Medical Director</option>
-			<option value="">Other</option>
+			<option value="otherMedical">Other</option>
 			<option value="">Pharmacy Director</option>
 			<option value="">Staff Pharmacist of a MCO</option>
 		</select>
 	</div>
-	
-	<div class="form-group">
+	<!--sub div-->
+<div class="licensed_are">
+	<div class="form-group administrator_ans">
 		<p style="color:#fff;">Are you a voting P & T (Pharmacy and Therapeutic) Committee Member?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
@@ -664,6 +788,16 @@
 			<option value="">No</option>
 		</select>
 	</div>
+		<div class="form-group otherMedical_ans">
+		<p style="color:#fff;">Please specify:</p>
+		<input type="text" class="form-control my_form">
+			
+	</div>
+	<!--sub div end-->
+	
+	
+	
+	
 		<div class="form-group">
 		<p style="color:#fff;">Are you among those responsible for the pharmacy budget within your organization?</p>
 		<select class="form-control my_form">
@@ -697,37 +831,28 @@
 		</select>
 	</div>
 	
-	<div class="form-group">
+	<div class="form-group" id="healthPlan">
 		<p style="color:#fff;">How would you describe your organization?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value="">Health Plans</option>
+			<option value="healthPlan_val">Health Plans</option>
 			<option value="">Pharmacy Benefits Management Company(PBM)</option>
-			<option value="">Both health plans and PBM</option>
+			<option value="healthPlan_val">Both health plans and PBM</option>
 			<option value="">Integrated Delivery System</option>
-			<option value="">Other</option>
+			<option value="healthDescribeVal">Other</option>
 			
 		</select>
 	</div>
-		<div class="form-group">
-		<p style="color:#fff;">How would you describe your organization?</p>
-		<select class="form-control my_form">
-			<option value="">Select</option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			
-		</select>
+	<div class="form-group healthDescribe">
+		<p style="color:#fff;">Please describe:</p>
+		<input type="text" class="form-control my_form">
+		
 	</div>
 	
 	
 	
-	
-	
-	
-		<div class="form-group">
+
+	<div class="form-group">
 		<p style="color:#fff;">Which of the following best describes where you are currently employed?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
@@ -740,7 +865,7 @@
 		</select>
 	</div>
 		
-	<div class="form-group">
+	<div class="form-group helthy_many">
 		<p style="color:#fff;">How many lives are currently covered by your organization?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
@@ -752,7 +877,7 @@
 			<option value=""></option>
 		</select>
 	</div>
-	
+</div>
 	
 	
 <div class="text-center">
@@ -761,7 +886,7 @@
 	</div>
 <!--md do-->
 	
-<div class="md_do">     
+<div class="md subDiv">     
 	<div class="form-group">
 		<p style="color:#fff;">Which of the following best categorizes your current degree attainment status?</p>
 		<select class="form-control my_form">
@@ -831,7 +956,7 @@
 	</div><!--md-->
 <!--nursing-->
 
-<div class="nursing">     
+<div class="nursing subDiv">     
 	<div class="form-group">
 		<p style="color:#fff;">Which of the following best describes your nursing certification level?</p>
 			<select class="form-control my_form">
@@ -844,6 +969,8 @@
 			<option value=""></option>
 		</select>
 	</div>
+	
+	
 	
 	<div class="form-group">
 		<p style="color:#fff;">What was / will be your date of graduation / licensure from your Nursing Degree program?</p>
@@ -864,8 +991,8 @@
 		<p style="color:#fff;">What best describes the type of Primary Practice that you work within?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value="">Yes</option>
-			<option value="">No</option>
+			<option value="">Solo</option>
+			<option value="">Partnership</option>
 		</select>
 	</div>
 	
@@ -873,10 +1000,9 @@
 		<p style="color:#fff;">What best describes the specialization of the Primary Practice that you work within?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
+			<option value="">Single-Specialty</option>
+			<option value="">Multi-Specialty</option>
+			
 		</select>
 	</div>
 	
@@ -884,12 +1010,10 @@
 		<p style="color:#fff;">What role do you play in the purchasing of Medical Supplies?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
+			<option value="">I make the final decision</option>
+			<option value="">I make the final decision in consultation with others</option>
+			<option value="">I provide recommendations only</option>
+			<option value="">I play no role</option>
 		</select>
 	</div>
 	
@@ -916,17 +1040,17 @@
 	</div>
 	<!--optometry-->
 	
-<div class="optometry">     
+<div class="optometry subDiv">     
 	<div class="form-group">
 		<p style="color:#fff;">Which of the following best describes your nursing certification level?</p>
 			<select class="form-control my_form">
-			<option value="">Select</option>
-			<option value=""> </option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
+		<option value="">Select</option>
+			<option value=""> Registered Nurse</option>
+			<option value="">LPN/LVN:Licensed Practical Nurse</option>
+			<option value="">Nurse Practitioner</option>
+			<option value="">Nursing Aid</option>
+			<option value="">Other(please specify)</option>
+			<option value="">None of the above</option>
 		</select>
 	</div>
 	
@@ -949,8 +1073,8 @@
 		<p style="color:#fff;">What best describes the type of Primary Practice that you work within?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value="">Yes</option>
-			<option value="">No</option>
+			<option value="">Solo</option>
+			<option value="">Partnership</option>
 		</select>
 	</div>
 	
@@ -966,23 +1090,29 @@
 	</div>
 	
 	<div class="form-group">
-		<p style="color:#fff;">What role do you play in the purchasing of Medical Supplies?</p>
+		<p style="color:#fff;">What best describes the specialization of the Primary Practice that you work within?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
+			<option value="">Single-Specialty</option>
+			<option value="">Multi-Specialty</option>
+		
 		</select>
 	</div>
 	
-	<div class="form-group">
-		<p style="color:#fff;">What is your state license number?</p>
+	<div class="form-group">What is your state license number?</p>
 		<input type="text" class="form-control my_form " placeholder="City" >
 	</div>
-		<div class="form-group">
+	<div class="form-group">
+		<p style="color:#fff;">What role do you play in formulary composition decisions?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">I make the final decision</option>
+			<option value="">I make the final decision in consultation with others</option>
+			<option value="">I provide recommendations only</option>
+			<option value="">I play no role</option>
+		</select>
+	</div>
+	<div class="form-group">
 		<p style="color:#fff;">Please select your practice setting</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
@@ -1001,34 +1131,34 @@
 	</div>
 <!--pharmacy-->
 
-	
-<div class="pharmacy">     
-	<div class="form-group">
+<div class="pharmacy subDiv">     
+	<div class="form-group" id="licensed_pharma">
 		<p style="color:#fff;">Which of the following best categorizes your current degree attainment status?</p>
 			<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value=""> </option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
+			<option value="licensePharma">Licensed Pharmacist</option>
+			<option value="">Pharmacy Student</option>
+			<option value="">Licensed Pharmacy Assistant</option>
+			<option value="">Pharmacy Assistant Student</option>
+			<option value="">Phamacy Technician</option>
+			<option value="">Intern</option>
+			<option value="">Other(please specify)</option>
 		</select>
 	</div>
-	<div class="form-group">
+	<div class="form-group" id="fulltimePharma">
 		<p style="color:#fff;">What is your professional status?</p>
 			<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value=""> </option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
+			<option value="fulltimePharma_val">Full time</option>
+			<option value="">Part time</option>
+			<option value="">Retired</option>
+			<option value="">Unemployed</option>
+			<option value="">Other</option>
+
 		</select>
 	</div>
-	
-	<div class="form-group">
+	<!--sub div-->
+	<div class="form-group fullPharma">
 		<p style="color:#fff;">What was / will be your date of graduation / licensure?</p>
 		<input class="btn btn-info month_box_md" placeholder="Year"type="text"/>
 		<input class="btn btn-info date_box_md" placeholder="date"type="text"/>
@@ -1036,20 +1166,48 @@
 	</div>
 	
 	<div class="form-group">
-		<p style="color:#fff;">Approximately how many prescriptions does your facility fill in an average month?</p>
+		<p style="color:#fff;">Approximately how many prescriptions do you fill in an average month?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value=""></option>
-			<option value="">
-			  </option>
+			<option value="">Less than 100</option>
+			<option value="">100-199 </option>
+			<option value="">200-299 </option>
+			<option value="">300-399 </option>
+			<option value="">400-499 </option>
+			<option value="">500+ </option>
 		</select>
 	</div>
 		<div class="form-group">
-		<p style="color:#fff;">Are you the person in charge of your Pharmacy?</p>
+		<p style="color:#fff;">Approximately how many prescriptions does your facility fill in an average month?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value=""></option>
-			<option value=""></option>
+			<option value="">Less than 500</option>
+			<option value="">500-999</option>
+			<option value="">1000-1499</option>
+			<option value="">1500-1999</option>
+			<option value="">2000-2499</option>
+			<option value="">2500-2999</option>
+			<option value="">3000+</option>
+		</select>
+	</div>
+	
+	<div class="form-group">
+		<p style="color:#fff;">Are you the Pharmacy owner?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">Yes</option>
+			<option value="">No</option>
+			
+		</select>
+	</div>
+	<div class="form-group">
+		<p style="color:#fff;">Are you the person in charge of your Pharmacy?
+</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">Yes</option>
+			<option value="">No</option>
+			
 		</select>
 	</div>
 	
@@ -1093,6 +1251,13 @@
 			
 		</select>
 	</div>
+	<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">I make the final decision</option>
+			<option value="">I make the final decision in consultation with others</option>
+			<option value="">I provide recommendations only</option>
+			<option value="">I play no role</option>
+		</select>
 	
 <div class="text-center">
 	<a href="#" ><button class="btn btn-info join_btn Submit_part">Submit </button></a>
@@ -1100,61 +1265,466 @@
 	</div>
 	<!-- physian-->
 	
-	
-<div class="physian">     
+<div class="physian subDiv">     
 	<div class="form-group">
 		<p style="color:#fff;">Which of the following best categorizes your current degree attainment status?</p>
 			<select class="form-control my_form">
 			<option value="">Select</option>
-			<option value=""> </option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
+			<option value="">Medical Doctor</option>
+			<option value="">Doctor of Osteopathy</option>
+			<option value="">Physician Assistant</option>
+			
 		</select>
 	</div>
-	<div class="form-group">
-		<p style="color:#fff;">What is the patient capacity of the hospital at which you have primary privileges?</p>
-			<select class="form-control my_form">
-			<option value="">Select</option>
-			<option value=""> </option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-			<option value=""></option>
-		</select>
-	</div>
+
 	
 	<div class="form-group">
-		<p style="color:#fff;">ME Number</p>
+		<p style="color:#fff;">What was / will be your date of graduation / licensure? (Please enter date that MD/DO degree was obtained)</p>
 		<input class="btn btn-info month_box_md" placeholder="Year"type="text"/>
 		<input class="btn btn-info date_box_md" placeholder="date"type="text"/>
 		<input class="btn btn-info month_box_md" placeholder="Month"type="text"/>
 	</div>
 	
 	<div class="form-group">
-		<p style="color:#fff;">What is your 10-digit National Provider Identifier number?</p>
+		<p style="color:#fff;">What is your primary specialty?</p>
 		<select class="form-control my_form">
 			<option value="">Select</option>
 			<option value=""></option>
-			<option value="">
-			  </option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			
 		</select>
 	</div>
-		
+	<div class="form-group">
+		<p style="color:#fff;">How would you classify your primary practice setting?
+</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			
+		</select>
+	</div>
+	<div class="form-group">
+		<p style="color:#fff;">What is the patient capacity of the hospital at which you have primary privileges?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">Less than 100 beds</option>
+			<option value="">101-199 beds</option>
+			<option value="">200-299 beds</option>
+			<option value="">More then 400 beds</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<p style="color:#fff;">ME Number</p>
+		<input type="text" class="form-control my_form " placeholder="City" >
+	</div>
+	<div class="form-group">
+		<p style="color:#fff;">What is your 10-digit National Provider Identifier number?</p>
+		<input type="text" class="form-control my_form " placeholder="City" >
+	</div>
+	
 	
 <div class="text-center">
 	<a href="#" ><button class="btn btn-info join_btn Submit_part">Submit </button></a>
 </div>	
 	</div>
+<!-- podiatry-->
+<div class="podiatry subDiv">     
+	<div class="form-group">
+		<p style="color:#fff;">Which of the following best describes your profession?</p>
+			<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">Doctor of podiatric Medicine</option>
+			<option value="">Podiatric Technician</option>
+			<option value="">Podiatric Nurse</option>
+			<option value="">Other (please specify)</option>
+			
+		</select>
+	</div>
+	<!--sub div-->
+	<div class="form-group">
+		<p style="color:#fff;">Please specify the other segment of Podiatry that you specialize in.</p>
+		<input type="text" class="form-control my_form " placeholder="City" >
+	</div>
+	<!--sub div end-->
+	<div class="form-group">
+		<p style="color:#fff;">What best describes your practice setting?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">Rural</option>
+			<option value="">Urban</option>
+			<option value="">Suburban</option>
+			
+			
+		</select>
+	</div>
+	<div class="form-group">
+		<p style="color:#fff;">What role do you play in the purchasing of Medical Supplies?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">I make the final decision</option>
+			<option value="">I make the final decision in consultation with others</option>
+			<option value="">I provide recommendations only</option>
+			<option value="">I play no role</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<p style="color:#fff;">Which of the following activities are you involved in? (select all that apply)</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			
+		</select>
+	</div>
+	
+	<div class="form-group" id="dentalFieldFulltime">	
+		<p style="color:#fff;">What is your professional status?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="fulltime_val">Full time</option>
+			<option value="">Part Time</option>
+			<option value="">Retired</option>
+			<option value="">Unemployed</option>
+			<option value="">Other</option>
+			
+		</select>
+	</div>
+	<div class="form-group">
+		<p style="color:#fff;">How would you classify the type of practice that you are involved with? (select all that apply)</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			
+		</select>
+	</div>
+
+<div class="text-center">
+	<a href="#" ><button class="btn btn-info join_btn Submit_part">Submit </button></a>
+</div>	
+	</div>
+<!--phsycology-->
 
 	
+<div class="psychology subDiv">     
+	<div class="form-group">
+		<p style="color:#fff;">Which of the following best describes your professional status/ involvement type?</p>
+			<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">Abuse Hotlines</option>
+			<option value="">Addicition Medicine Specialist</option>
+			<option value="">Adolescent Medicine Specialist</option>
+			<option value="">Child Psychologist</option>
+			<option value="">Clinical Psychologist</option>
+			<option value="">Community Support</option>
+			<option value="">Psychologist</option>
+			<option value="">Social Worker</option>
+			<option value="">Other: Please specify</option>	
+		</select>
+	</div>
+	<!--sub div-->
+	<div class="form-group">
+		<p style="color:#fff;">Please specify the other segment of Podiatry that you specialize in.</p>
+		<input type="text" class="form-control my_form " placeholder="City" >
+	</div>
+	<!--sub div end-->
+	<div class="form-group">
+		<p style="color:#fff;">What best describes your practice setting?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">Rural</option>
+			<option value="">Urban</option>
+			<option value="">Suburban</option>
+			
+			
+		</select>
+	</div>
+	<div class="form-group">
+		<p style="color:#fff;">What role do you play in the purchasing of Medical Supplies?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">I make the final decision</option>
+			<option value="">I make the final decision in consultation with others</option>
+			<option value="">I provide recommendations only</option>
+			<option value="">I play no role</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<p style="color:#fff;">Which of the following activities are you involved in? (select all that apply)</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			
+		</select>
+	</div>
+	
+	<div class="form-group" id="dentalFieldFulltime">	
+		<p style="color:#fff;">What is your professional status?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="fulltime_val">Full time</option>
+			<option value="">Part Time</option>
+			<option value="">Retired</option>
+			<option value="">Unemployed</option>
+			<option value="">Other</option>
+			
+		</select>
+	</div>
+	<div class="form-group">
+		<p style="color:#fff;">How would you classify the type of practice that you are involved with? (select all that apply)</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			
+		</select>
+	</div>
 
+<div class="text-center">
+	<a href="#" ><button class="btn btn-info join_btn Submit_part">Submit </button></a>
+</div>	
+	</div>
+	<!--therepist-->
+<div class="therapist subDiv"> 
+	
+	<div class="form-group therapist_sub" >
+		<p style="color:#fff;">Please specify the other segment of Podiatry that you specialize in.</p>
+		<input type="text" class="form-control my_form " placeholder="" >
+		</div>
+	
+	<div class="form-group " id="therapistSubPlease">
+		<p style="color:#fff;">What best describes your practice setting?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">Physical Therapist</option>
+			<option value="">Occupational Therapist</option>
+			<option value="">Rehabilition Therapist</option>
+			<option value="">Respiratory Therapist</option>
+			<option value="please_val">Other(please specify)</option>
+		</select>
+		</div>
 
+</div>	
+	
+<!--veterian-->
+	
+	
+<div class="Medicine subDiv">     
+	<div class="form-group">
+		<p style="color:#fff;">Which of the following best categorizes your current degree attainment status?</p>
+			<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">office managment / Reception in a veterinary facili</option>
+			<option value="">Veterinarian</option>
+			<option value="">Veterinarian Technician</option>
+			<option value="">None of the above</option>
+		
+		</select>
+	</div>
+	<!--sub div-->
+	<div class="form-group">
+		<p style="color:#fff;">Which best categorizes your current position in the medical community?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">Actively Practicing</option>
+			<option value="">Professional</option>
+			<option value="">Intern</option>
+			<option value="">resident</option>
+			<option value="">Student</option>
+			<option value="">other(please specify)</option>
+			
+		</select>
+	</div>
+	
+		
+	<div class="form-group" id="dentalFieldFulltime">	
+		<p style="color:#fff;">What is your professional status?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="fulltime_val">Full time</option>
+			<option value="">Part Time</option>
+			<option value="">Retired</option>
+			<option value="">Unemployed</option>
+			<option value="">Other</option>
+			
+		</select>
+	</div>
+	<div class="form-group" id="dentalFieldFulltime">	
+		<p style="color:#fff;">What best describes the ownership of your primary practice?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="fulltime_val">Solo practice</option>
+			<option value="">partnership</option>
+			
+			
+		</select>
+	</div>
+	<div class="form-group" id="dentalFieldFulltime">	
+		<p style="color:#fff;">What best describes the ownership of your primary practice?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="fulltime_val">Single-Specialty</option>
+			<option value="">Multi-Specialty</option>	
+		</select>
+	</div>
+	
+	<div class="form-group" id="dentalFieldFulltime">	
+		<p style="color:#fff;">What best describes the ownership of your primary practice?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="fulltime_val">Single-Specialty</option>
+			<option value="">Multi-Specialty</option>	
+		</select>
+	</div>
+	
+	<div class="form-group" id="dentalFieldFulltime">	
+		<p style="color:#fff;">How many animals does your Practice serve?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="fulltime_val">0-99</option>
+			<option value="">100-299</option>
+			<option value="">300-699</option>
+			<option value="">700-999</option>
+			<option value="">1000-1999</option>
+			<option value="">2000+</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<p style="color:#fff;">What role do you play in the purchasing of Medical Supplies?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">I make the final decision</option>
+			<option value="">I make the final decision in consultation with others</option>
+			<option value="">I provide recommendations only</option>
+			<option value="">I play no role</option>
+		</select>
+	</div>
+	
+<div class="form-group">
+		<p style="color:#fff;">In which 3 of the following activities do you spend the majority of your time?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			
+		</select>
+	</div>
+<div class="text-center">
+	<a href="#" ><button class="btn btn-info join_btn Submit_part">Submit </button></a>
+</div>	
+<!--sub div-->
+	
+	<div class="form-group">
+		<p style="color:#fff;">How would you classify the type of practice that you are involved with? (select all that apply)</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			<option value=""></option>
+			
+		</select>
+	</div>
+
+</div>
+<!--other paart-->
 
 	
+<div class="other subDiv">     
+	<div class="form-group">
+		<p style="color:#fff;">What is your current title?</p>
+			<input type="text" class="form-control my_form " placeholder="City" >
+	</div>
+	<!--sub div-->
+	<div class="form-group">
+		<p style="color:#fff;">What best describes your practice setting?</p>
+		<select class="form-control my_form">
+			<option value="">Select</option>
+			<option value="">Rural</option>
+			<option value="">Urban</option>
+			<option value="">Suburban</option>
+		</select>
+	</div>
+	<!--sub div end-->
+<div class="form-group">
+	<p style="color:#fff;">What best describes your practice setting?</p>
+	<select class="form-control my_form">
+		<option value="">Select</option>
+		<option value="">Rural</option>
+		<option value="">Urban</option>
+		<option value="">Suburban</option>
+	</select>
+</div>
+
+	
+<div class="form-group">
+	<p style="color:#fff;">What role do you play in the purchasing of Medical Supplies?</p>
+	<select class="form-control my_form">
+		<option value="">Select</option>
+		<option value="">I make the final decision</option>
+		<option value="">I make the final decision in consultation with others</option>
+		<option value="">I provide recommendations only</option>
+		<option value="">I play no role</option>
+	</select>
+</div>
+<div class="form-group">
+	<p style="color:#fff;">Which of the following activities are you involved in? (select all that apply)</p>
+	<select class="form-control my_form">
+		<option value="">Select</option>
+		<option value=""></option>
+		<option value=""></option>
+		<option value=""></option>
+		<option value=""></option>
+	</select>
+</div>
+	
+<div class="form-group" id="dentalFieldFulltime">	
+	<p style="color:#fff;">What is your professional status?</p>
+	<select class="form-control my_form">
+		<option value="">Select</option>
+		<option value="fulltime_val">Full time</option>
+		<option value="">Part Time</option>
+		<option value="">Retired</option>
+		<option value="">Unemployed</option>
+		<option value="">Other</option>
+	</select>
+</div>
+<div class="form-group">
+	<p style="color:#fff;">How would you classify the type of practice that you are involved with?(select all that apply)</p>
+	<select class="form-control my_form">
+		<option value="">Select</option>
+		<option value=""></option>
+		<option value=""></option>
+		<option value=""></option>
+		<option value=""></option>
+	</select>
+</div>
+
+<div class="text-center">
+	<a href="#" ><button class="btn btn-info join_btn Submit_part">Submit </button></a>
+</div>	
+	</div>
+
+
 </div><!--occupation-part end-->
 
 
